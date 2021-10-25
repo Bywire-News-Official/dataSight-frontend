@@ -1,0 +1,539 @@
+<div class=" header bg-danger pb-6">
+  <div class=" container-fluid">
+    <div class=" header-body">
+      <div class=" row align-items-center py-4">
+        <div class=" col-lg-6 col-7">
+          <h6 class=" h2 text-white d-inline-block mb-0">Form elements</h6>
+
+          <nav
+            aria-label="breadcrumb"
+            class=" d-none d-md-inline-block ml-md-4"
+          >
+            <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> <i class=" fas fa-home"> </i> </a>
+              </li>
+
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> Forms </a>
+              </li>
+
+              <li aria-current="page" class=" breadcrumb-item active">
+                Form elements
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class=" col-lg-6 col-5 text-right">
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)"> New </a>
+
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)">
+            Filters
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" container-fluid mt--6">
+  <div class=" row">
+    <div class=" col">
+      <div class=" card-wrapper">
+        <div class=" card">
+          <div class=" card-header"><h3 class=" mb-0">Custom styles</h3></div>
+
+          <div class=" card-body">
+            <div class=" row">
+              <div class=" col-lg-8">
+                <p class=" mb-0">
+                  For custom form validation messages, you’ll need to add the
+                  novalidate boolean attribute to your
+                  <code>&#60;form&#62;</code> . This disables the browser
+                  default feedback tooltips, but still provides access to the
+                  form validation APIs in JavaScript. <br />
+                  <br />
+
+                  When attempting to submit, you’ll see the<code>
+                    :invalid
+                  </code>
+                  and <code> :valid </code> styles applied to your form
+                  controls.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <form class=" needs-validation" novalidate="">
+              <div class=" form-row">
+                <div class=" col-md-4 mb-3">
+                  <label class=" form-control-label" for="validationCustom01">
+                    First name
+                  </label>
+
+                  <input
+                    class=" form-control"
+                    id="validationCustom01"
+                    placeholder="First name"
+                    required=""
+                    type="text"
+                    value="Mark"
+                  />
+
+                  <div class=" valid-feedback">Looks good!</div>
+                </div>
+
+                <div class=" col-md-4 mb-3">
+                  <label class=" form-control-label" for="validationCustom02">
+                    Last name
+                  </label>
+
+                  <input
+                    class=" form-control"
+                    id="validationCustom02"
+                    placeholder="Last name"
+                    required=""
+                    type="text"
+                    value="Otto"
+                  />
+
+                  <div class=" valid-feedback">Looks good!</div>
+                </div>
+
+                <div class=" col-md-4 mb-3">
+                  <label
+                    class=" form-control-label"
+                    for="validationCustomUsername"
+                  >
+                    Username
+                  </label>
+
+                  <input
+                    aria-describedby="inputGroupPrepend"
+                    class=" form-control"
+                    id="validationCustomUsername"
+                    placeholder="Username"
+                    required=""
+                    type="text"
+                  />
+
+                  <div class=" invalid-feedback">Please choose a username.</div>
+                </div>
+              </div>
+
+              <div class=" form-row">
+                <div class=" col-md-6 mb-3">
+                  <label class=" form-control-label" for="validationCustom03">
+                    City
+                  </label>
+
+                  <input
+                    class=" form-control"
+                    id="validationCustom03"
+                    placeholder="City"
+                    required=""
+                    type="text"
+                  />
+
+                  <div class=" invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+
+                <div class=" col-md-3 mb-3">
+                  <label class=" form-control-label" for="validationCustom04">
+                    State
+                  </label>
+
+                  <input
+                    class=" form-control"
+                    id="validationCustom04"
+                    placeholder="State"
+                    required=""
+                    type="text"
+                  />
+
+                  <div class=" invalid-feedback">
+                    Please provide a valid state.
+                  </div>
+                </div>
+
+                <div class=" col-md-3 mb-3">
+                  <label class=" form-control-label" for="validationCustom05">
+                    Zip
+                  </label>
+
+                  <input
+                    class=" form-control"
+                    id="validationCustom05"
+                    placeholder="Zip"
+                    required=""
+                    type="text"
+                  />
+
+                  <div class=" invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+              </div>
+
+              <div class=" form-group">
+                <div class=" custom-control custom-checkbox mb-3">
+                  <input
+                    class=" custom-control-input"
+                    id="invalidCheck"
+                    required=""
+                    type="checkbox"
+                    value=""
+                  />
+
+                  <label class=" custom-control-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+
+                  <div class=" invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+
+              <button class=" btn btn-primary" type="submit">
+                Submit form
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- Card header -->
+          <div class="card-header"><h3 class="mb-0">Browser defaults</h3></div>
+          <!-- Card body -->
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-8">
+                <p class="mb-0">
+                  Not interested in custom validation feedback messages or
+                  writing JavaScript to change form behaviors? All good, you can
+                  use the browser defaults. Try submitting the form below.
+                  Depending on your browser and OS, you’ll see a slightly
+                  different style of feedback. <br /><br />
+                  While these feedback styles cannot be styled with CSS, you can
+                  still customize the feedback text through JavaScript.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <form ngNativeValidate>
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="validationDefault01"
+                      >First name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault01"
+                      placeholder="First name"
+                      value="Mark"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="validationDefault02"
+                      >Last name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault02"
+                      placeholder="Last name"
+                      value="Otto"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="form-group">
+                    <label
+                      class="form-control-label"
+                      for="validationDefaultUsername"
+                      >Username</label
+                    >
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend2"
+                          >@</span
+                        >
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="validationDefaultUsername"
+                        placeholder="Username"
+                        aria-describedby="inputGroupPrepend2"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="validationDefault03"
+                      >City</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault03"
+                      placeholder="City"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="validationDefault04"
+                      >State</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault04"
+                      placeholder="State"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <div class="form-group">
+                    <label class="form-control-label" for="validationDefault05"
+                      >Zip</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="validationDefault05"
+                      placeholder="Zip"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="custom-control custom-checkbox mb-3">
+                  <input
+                    class="custom-control-input"
+                    id="invalidCheck2"
+                    type="checkbox"
+                    value=""
+                    required
+                  />
+                  <label class="custom-control-label" for="invalidCheck2"
+                    >Agree to terms and conditions</label
+                  >
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+          </div>
+        </div>
+
+        <div class=" card">
+          <div class=" card-header"><h3 class=" mb-0">Server side</h3></div>
+
+          <div class=" card-body">
+            <div class=" row">
+              <div class=" col-lg-8">
+                <p class=" mb-0">
+                  We recommend using client side validation, but in case you
+                  require server side, you can indicate invalid and valid form
+                  fields with <code> .is-invalid </code> and
+                  <code> .is-valid </code> . Note that
+                  <code> .invalid-feedback </code>
+
+                  is also supported with these classes.
+                </p>
+              </div>
+            </div>
+
+            <hr />
+
+            <form>
+              <div class=" form-row">
+                <div class=" col-md-4 mb-3">
+                  <div class=" form-group has-success">
+                    <label class=" form-control-label" for="validationServer01">
+                      First name
+                    </label>
+
+                    <input
+                      class=" form-control is-valid"
+                      id="validationServer01"
+                      placeholder="First name"
+                      required=""
+                      type="text"
+                      value="Mark"
+                    />
+
+                    <div class=" valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+
+                <div class=" col-md-4 mb-3">
+                  <div class=" form-group has-success">
+                    <label class=" form-control-label" for="validationServer02">
+                      Last name
+                    </label>
+
+                    <input
+                      class=" form-control is-valid"
+                      id="validationServer02"
+                      placeholder="Last name"
+                      required=""
+                      type="text"
+                      value="Otto"
+                    />
+
+                    <div class=" valid-feedback">Looks good!</div>
+                  </div>
+                </div>
+
+                <div class=" col-md-4 mb-3">
+                  <div class=" form-group has-danger">
+                    <label
+                      class=" form-control-label"
+                      for="validationServerUsername"
+                    >
+                      Username
+                    </label>
+
+                    <input
+                      aria-describedby="inputGroupPrepend3"
+                      class=" form-control is-invalid"
+                      id="validationServerUsername"
+                      placeholder="Username"
+                      required=""
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class=" form-row">
+                <div class=" col-md-6 mb-3">
+                  <div class=" form-group has-danger">
+                    <label class=" form-control-label" for="validationServer03">
+                      City
+                    </label>
+
+                    <input
+                      class=" form-control is-invalid"
+                      id="validationServer03"
+                      placeholder="City"
+                      required=""
+                      type="text"
+                    />
+
+                    <div class=" invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" col-md-3 mb-3">
+                  <div class=" form-group has-danger">
+                    <label class=" form-control-label" for="validationServer04">
+                      State
+                    </label>
+
+                    <input
+                      class=" form-control is-invalid"
+                      id="validationServer04"
+                      placeholder="State"
+                      required=""
+                      type="text"
+                    />
+
+                    <div class=" invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                </div>
+
+                <div class=" col-md-3 mb-3">
+                  <div class=" form-group has-danger">
+                    <label class=" form-control-label" for="validationServer05">
+                      Zip
+                    </label>
+
+                    <input
+                      class=" form-control is-invalid"
+                      id="validationServer05"
+                      placeholder="Zip"
+                      required=""
+                      type="text"
+                    />
+
+                    <div class=" invalid-feedback">
+                      Please provide a valid zip.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class=" form-group has-danger">
+                <div class=" custom-control custom-checkbox mb-3">
+                  <input
+                    class=" custom-control-input is-invalid"
+                    id="invalidCheck3"
+                    required=""
+                    type="checkbox"
+                    value=""
+                  />
+
+                  <label class=" custom-control-label" for="invalidCheck3">
+                    Agree to terms and conditions
+                  </label>
+
+                  <div class=" invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+
+              <div class=" form-group has-danger">
+                <div class=" input-group input-group-merge">
+                  <div class=" input-group-prepend">
+                    <span class=" input-group-text">
+                      <i class="fa fa-key"> </i>
+                    </span>
+                  </div>
+                  <input
+                    asp-for="Password"
+                    class=" form-control is-invalid"
+                    placeholder="Password"
+                    type="password"
+                  />
+                </div>
+              </div>
+
+              <button class=" btn btn-primary" type="submit">
+                Submit form
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

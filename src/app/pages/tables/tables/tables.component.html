@@ -1,0 +1,3017 @@
+<div class=" header bg-danger pb-6">
+  <div class=" container-fluid">
+    <div class=" header-body">
+      <div class=" row align-items-center py-4">
+        <div class=" col-lg-6 col-7">
+          <h6 class=" h2 text-white d-inline-block mb-0">Tables</h6>
+
+          <nav
+            aria-label="breadcrumb"
+            class=" d-none d-md-inline-block ml-md-4"
+          >
+            <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> <i class=" fas fa-home"> </i> </a>
+              </li>
+
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> Tables </a>
+              </li>
+
+              <li aria-current="page" class=" breadcrumb-item active">
+                Tables
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class=" col-lg-6 col-5 text-right">
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)"> New </a>
+
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)">
+            Filters
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" container-fluid mt--6">
+  <div class=" row">
+    <div class=" col">
+      <div class=" card">
+        <div class=" card-header border-0">
+          <h3 class=" mb-0">Light table</h3>
+        </div>
+
+        <div class=" table-responsive">
+          <table class=" table align-items-center table-flush">
+            <thead class=" thead-light">
+              <tr>
+                <th class=" sort" data-sort="name" scope="col">Project</th>
+
+                <th class=" sort" data-sort="budget" scope="col">Budget</th>
+
+                <th class=" sort" data-sort="status" scope="col">Status</th>
+
+                <th scope="col">Users</th>
+
+                <th class=" sort" data-sort="completion" scope="col">
+                  Completion
+                </th>
+
+                <th scope="col"></th>
+              </tr>
+            </thead>
+
+            <tbody class=" list">
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/bootstrap.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Argon Design System
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$2500 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-warning"> </i>
+
+                    <span class=" status"> pending </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 60% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="warning" [value]="60"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/angular.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Angular Now UI Kit PRO
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$1800 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class="bg-success"> </i>
+
+                    <span class=" status"> completed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 100% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="success" [value]="100">
+                        </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/sketch.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm"> Black Dashboard </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$3150 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-danger"> </i>
+
+                    <span class=" status"> delayed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 72% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="danger" [value]="72"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/react.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        React Material Dashboard
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$4400 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-info"> </i>
+
+                    <span class=" status"> on schedule </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 90% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="info" [value]="90"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/vue.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Vue Paper UI Kit PRO
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$2200 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-success"> </i>
+
+                    <span class=" status"> completed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 100% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="success" [value]="100">
+                        </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class=" card-footer py-4">
+          <nav aria-label="...">
+            <pagination [totalItems]="25"
+                        class="justify-content-end mb-0"
+                        [customPreviousTemplate]="prevTemplate"
+                        [customNextTemplate]="nextTemplate">
+            </pagination>
+
+            <ng-template #nextTemplate let-currentPage="currentPage">
+              <ng-container *ngIf="!disabled">
+                <i class='fas fa-angle-right'></i>
+              </ng-container>
+            </ng-template>
+
+            <ng-template #prevTemplate let-currentPage="currentPage">
+              <ng-container *ngIf="!disabled">
+                <i class='fas fa-angle-left'></i>
+              </ng-container>
+            </ng-template>
+
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class=" card-header border-0">
+      <div class=" row">
+        <div class=" col-6"><h3 class=" mb-0">Inline actions</h3></div>
+
+        <div class=" col-6 text-right">
+          <a
+            class=" btn btn-sm btn-neutral btn-round btn-icon"
+            href="javascript:void(0)"
+            tooltip="Edit product"
+            placement="top"
+          >
+            <span class=" btn-inner--icon">
+              <i class=" fas fa-user-edit"> </i>
+            </span>
+
+            <span class=" btn-inner--text"> Export </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" table-responsive">
+      <table class=" table align-items-center table-flush">
+        <thead class=" thead-light">
+          <tr>
+            <th>Author</th>
+
+            <th>Created at</th>
+
+            <th>Product</th>
+
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-1.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-2.jpg"
+              />
+
+              <b> Alex Smith </b>
+            </td>
+
+            <td><span class=" text-muted"> 08/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Design System
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-3.jpg"
+              />
+
+              <b> Samantha Ivy </b>
+            </td>
+
+            <td><span class=" text-muted"> 30/08/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Black Dashboard
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-1.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-2.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class=" card-header border-0">
+      <div class=" row">
+        <div class=" col-6"><h3 class=" mb-0">Striped table</h3></div>
+
+        <div class=" col-6 text-right">
+          <a
+            class=" btn btn-sm btn-primary btn-round btn-icon"
+            href="javascript:void(0)"
+            tooltip="Edit product"
+            placement="top"
+          >
+            <span class=" btn-inner--icon">
+              <i class=" fas fa-user-edit"> </i>
+            </span>
+
+            <span class=" btn-inner--text"> Export </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" table-responsive">
+      <table class=" table align-items-center table-flush table-striped">
+        <thead class=" thead-light">
+          <tr>
+            <th>Author</th>
+
+            <th>Created at</th>
+
+            <th>Product</th>
+
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-1.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-2.jpg"
+              />
+
+              <b> Alex Smith </b>
+            </td>
+
+            <td><span class=" text-muted"> 08/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Design System
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-3.jpg"
+              />
+
+              <b> Samantha Ivy </b>
+            </td>
+
+            <td><span class=" text-muted"> 30/08/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Black Dashboard
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-1.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class=" table-user">
+              <img
+                class=" avatar rounded-circle mr-3"
+                src="assets/img/theme/team-2.jpg"
+              />
+
+              <b> John Michael </b>
+            </td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td class=" table-actions">
+              <a
+                class="table-action"
+                tooltip="Edit product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-user-edit"> </i>
+              </a>
+
+              <a
+                class=" table-action table-action-delete"
+                tooltip="Delete product"
+                placement="top"
+                href="javascript:void(0)"
+              >
+                <i class=" fas fa-trash"> </i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class=" card-header border-0">
+      <div class=" row">
+        <div class=" col-6"><h3 class=" mb-0">Checkbox + Toggles</h3></div>
+
+        <div class=" col-6 text-right">
+          <a
+            class=" btn btn-sm btn-danger btn-round btn-icon"
+            href="javascript:void(0)"
+            tooltip="Edit product"
+            placement="top"
+          >
+            <span class=" btn-inner--icon">
+              <i class=" fas fa-trash"> </i>
+            </span>
+
+            <span class=" btn-inner--text"> Delete </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" table-responsive">
+      <table class=" table align-items-center table-flush table-hover">
+        <thead class=" thead-light">
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <th>Author</th>
+
+            <th>Created at</th>
+
+            <th>Product</th>
+
+            <th>Active</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> Alex Smith </b></td>
+
+            <td><span class=" text-muted"> 08/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Design System
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> Samantha Ivy </b></td>
+
+            <td><span class=" text-muted"> 30/08/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Black Dashboard
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class=" card">
+    <div class=" card-header border-0">
+      <div class=" row">
+        <div class=" col-6"><h3 class=" mb-0">Checkbox + Labels</h3></div>
+
+        <div class=" col-6 text-right">
+          <a
+            class=" btn btn-sm btn-danger btn-round btn-icon"
+            href="javascript:void(0)"
+            tooltip="Edit product"
+            placement="top"
+          >
+            <span class=" btn-inner--icon">
+              <i class=" fas fa-trash"> </i>
+            </span>
+
+            <span class=" btn-inner--text"> Delete </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class=" table-responsive">
+      <table class=" table align-items-center table-flush table-hover">
+        <thead class=" thead-light">
+          <tr>
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <th>Author</th>
+
+            <th>Created at</th>
+
+            <th>Product</th>
+
+            <th>Active</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class=" table-success">
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr class=" table-">
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> Alex Smith </b></td>
+
+            <td><span class=" text-muted"> 08/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Design System
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr class=" table-warning">
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> Samantha Ivy </b></td>
+
+            <td><span class=" text-muted"> 30/08/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Black Dashboard
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr class=" table-">
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+
+          <tr class=" table-">
+            <th>
+              <div class=" custom-control custom-checkbox">
+                <input
+                  class=" custom-control-input"
+                  id="table-check-all"
+                  type="checkbox"
+                />
+
+                <label class=" custom-control-label" for="table-check-all">
+                </label>
+              </div>
+            </th>
+
+            <td class=" table-user"><b> John Michael </b></td>
+
+            <td><span class=" text-muted"> 10/09/2018 </span></td>
+
+            <td>
+              <a class=" font-weight-bold" href="javascript:void(0)">
+                Argon Dashboard PRO
+              </a>
+            </td>
+
+            <td>
+              <label class=" custom-toggle">
+                <input checked="checked" type="checkbox" />
+
+                <span
+                  class=" custom-toggle-slider rounded-circle"
+                  data-label-off="No"
+                  data-label-on="Yes"
+                >
+                </span>
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class=" card bg-transparent">
+    <div class=" card-header bg-transparent border-0">
+      <h3 class=" mb-0">Translucent table</h3>
+    </div>
+
+    <div class=" table-responsive">
+      <table class=" table align-items-center table-flush">
+        <thead class=" thead-light">
+          <tr>
+            <th class=" sort" data-sort="name" scope="col">Project</th>
+
+            <th class=" sort" data-sort="budget" scope="col">Budget</th>
+
+            <th class=" sort" data-sort="status" scope="col">Status</th>
+
+            <th scope="col">Users</th>
+
+            <th class=" sort" data-sort="completion" scope="col">Completion</th>
+
+            <th scope="col"></th>
+          </tr>
+        </thead>
+
+        <tbody class=" list">
+          <tr>
+            <th scope="row">
+              <div class=" media align-items-center">
+                <a
+                  class=" avatar rounded-circle mr-3"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/bootstrap.jpg"
+                  />
+                </a>
+
+                <div class=" media-body">
+                  <span class=" name mb-0 text-sm"> Argon Design System </span>
+                </div>
+              </div>
+            </th>
+
+            <td class=" budget">$2500 USD</td>
+
+            <td>
+              <span class=" badge badge-dot mr-4">
+                <i class=" bg-warning"> </i>
+
+                <span class=" status"> pending </span>
+              </span>
+            </td>
+
+            <td>
+              <div class=" avatar-group">
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Ryan Tompson"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-1.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Romina Hadid"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-2.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Alexander Smith"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-3.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Jessica Doe"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-4.jpg"
+                  />
+                </a>
+              </div>
+            </td>
+
+            <td>
+              <div class=" d-flex align-items-center">
+                <span class=" completion mr-2"> 60% </span>
+
+                <div>
+                  <div class=" progress">
+                    <progressbar type="warning" [value]="60"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td class=" text-right">
+              <div class="dropdown no-caret" dropdown>
+                <a
+                  aria-controls="dropdown-basic"
+                  class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                  dropdownToggle
+                  role="button"
+                >
+                  <i class=" fas fa-ellipsis-v"> </i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                  *dropdownMenu
+                >
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Another action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Something else here
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class=" media align-items-center">
+                <a
+                  class=" avatar rounded-circle mr-3"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/angular.jpg"
+                  />
+                </a>
+
+                <div class=" media-body">
+                  <span class=" name mb-0 text-sm">
+                    Angular Now UI Kit PRO
+                  </span>
+                </div>
+              </div>
+            </th>
+
+            <td class=" budget">$1800 USD</td>
+
+            <td>
+              <span class=" badge badge-dot mr-4">
+                <i class=" bg-success"> </i>
+
+                <span class=" status"> completed </span>
+              </span>
+            </td>
+
+            <td>
+              <div class=" avatar-group">
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Ryan Tompson"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-1.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Romina Hadid"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-2.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Alexander Smith"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-3.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Jessica Doe"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-4.jpg"
+                  />
+                </a>
+              </div>
+            </td>
+
+            <td>
+              <div class=" d-flex align-items-center">
+                <span class=" completion mr-2"> 100% </span>
+
+                <div>
+                  <div class=" progress">
+                    <progressbar type="success" [value]="100"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td class=" text-right">
+              <div class="dropdown no-caret" dropdown>
+                <a
+                  aria-controls="dropdown-basic"
+                  class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                  dropdownToggle
+                  href="javascript:void(0)"
+                  role="button"
+                >
+                  <i class=" fas fa-ellipsis-v"> </i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                  *dropdownMenu
+                >
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Another action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Something else here
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class=" media align-items-center">
+                <a
+                  class=" avatar rounded-circle mr-3"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/sketch.jpg"
+                  />
+                </a>
+
+                <div class=" media-body">
+                  <span class=" name mb-0 text-sm"> Black Dashboard </span>
+                </div>
+              </div>
+            </th>
+
+            <td class=" budget">$3150 USD</td>
+
+            <td>
+              <span class=" badge badge-dot mr-4">
+                <i class=" bg-danger"> </i>
+
+                <span class=" status"> delayed </span>
+              </span>
+            </td>
+
+            <td>
+              <div class=" avatar-group">
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Ryan Tompson"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-1.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Romina Hadid"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-2.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Alexander Smith"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-3.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Jessica Doe"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-4.jpg"
+                  />
+                </a>
+              </div>
+            </td>
+
+            <td>
+              <div class=" d-flex align-items-center">
+                <span class=" completion mr-2"> 72% </span>
+
+                <div>
+                  <div class=" progress">
+                    <progressbar type="danger" [value]="72"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td class=" text-right">
+              <div class="dropdown no-caret" dropdown>
+                <a
+                  aria-controls="dropdown-basic"
+                  class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                  dropdownToggle
+                  href="javascript:void(0)"
+                  role="button"
+                >
+                  <i class=" fas fa-ellipsis-v"> </i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                  *dropdownMenu
+                >
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Another action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Something else here
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class=" media align-items-center">
+                <a
+                  class=" avatar rounded-circle mr-3"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/react.jpg"
+                  />
+                </a>
+
+                <div class=" media-body">
+                  <span class=" name mb-0 text-sm">
+                    React Material Dashboard
+                  </span>
+                </div>
+              </div>
+            </th>
+
+            <td class=" budget">$4400 USD</td>
+
+            <td>
+              <span class=" badge badge-dot mr-4">
+                <i class=" bg-info"> </i>
+
+                <span class=" status"> on schedule </span>
+              </span>
+            </td>
+
+            <td>
+              <div class=" avatar-group">
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Ryan Tompson"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-1.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Romina Hadid"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-2.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Alexander Smith"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-3.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Jessica Doe"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-4.jpg"
+                  />
+                </a>
+              </div>
+            </td>
+
+            <td>
+              <div class=" d-flex align-items-center">
+                <span class=" completion mr-2"> 90% </span>
+
+                <div>
+                  <div class=" progress">
+                    <progressbar type="info" [value]="90"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td class=" text-right">
+              <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                <a
+                  aria-controls="dropdown-basic"
+                  class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                  dropdownToggle
+                  href="javascript:void(0)"
+                  role="button"
+                >
+                  <i class=" fas fa-ellipsis-v"> </i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                  *dropdownMenu
+                >
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Another action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Something else here
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class=" media align-items-center">
+                <a
+                  class=" avatar rounded-circle mr-3"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/vue.jpg"
+                  />
+                </a>
+
+                <div class=" media-body">
+                  <span class=" name mb-0 text-sm"> Vue Paper UI Kit PRO </span>
+                </div>
+              </div>
+            </th>
+
+            <td class=" budget">$2200 USD</td>
+
+            <td>
+              <span class=" badge badge-dot mr-4">
+                <i class=" bg-success"> </i>
+
+                <span class=" status"> completed </span>
+              </span>
+            </td>
+
+            <td>
+              <div class=" avatar-group">
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Ryan Tompson"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-1.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Romina Hadid"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-2.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Alexander Smith"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-3.jpg"
+                  />
+                </a>
+
+                <a
+                  class=" avatar avatar-sm rounded-circle"
+                  tooltip="Jessica Doe"
+                  placement="top"
+                  href="javascript:void(0)"
+                >
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/theme/team-4.jpg"
+                  />
+                </a>
+              </div>
+            </td>
+
+            <td>
+              <div class=" d-flex align-items-center">
+                <span class=" completion mr-2"> 100% </span>
+
+                <div>
+                  <div class=" progress">
+                    <progressbar type="success" [value]="100"> </progressbar>
+                  </div>
+                </div>
+              </div>
+            </td>
+
+            <td class=" text-right">
+              <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                <a
+                  aria-controls="dropdown-basic"
+                  class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                  dropdownToggle
+                  href="javascript:void(0)"
+                  role="button"
+                >
+                  <i class=" fas fa-ellipsis-v"> </i>
+                </a>
+
+                <div
+                  class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                  *dropdownMenu
+                >
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Another action
+                  </a>
+
+                  <a href="javascript:void(0)" class="dropdown-item">
+                    Something else here
+                  </a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class=" row">
+    <div class=" col">
+      <div class=" card bg-default shadow">
+        <div class=" card-header bg-transparent border-0">
+          <h3 class=" text-white mb-0">Dark table</h3>
+        </div>
+
+        <div class=" table-responsive">
+          <table class=" table align-items-center table-dark table-flush">
+            <thead class=" thead-dark">
+              <tr>
+                <th class=" sort" data-sort="name" scope="col">Project</th>
+
+                <th class=" sort" data-sort="budget" scope="col">Budget</th>
+
+                <th class=" sort" data-sort="status" scope="col">Status</th>
+
+                <th scope="col">Users</th>
+
+                <th class=" sort" data-sort="completion" scope="col">
+                  Completion
+                </th>
+
+                <th scope="col"></th>
+              </tr>
+            </thead>
+
+            <tbody class=" list">
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/bootstrap.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Argon Design System
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$2500 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-warning"> </i>
+
+                    <span class=" status"> pending </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 60% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="warning" [value]="60"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/angular.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Angular Now UI Kit PRO
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$1800 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-success"> </i>
+
+                    <span class=" status"> completed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 100% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="success" [value]="100">
+                        </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/sketch.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm"> Black Dashboard </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$3150 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-danger"> </i>
+
+                    <span class=" status"> delayed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 72% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="danger" [value]="72"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown>
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/react.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        React Material Dashboard
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$4400 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-info"> </i>
+
+                    <span class=" status"> on schedule </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 90% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="info" [value]="90"> </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">
+                  <div class=" media align-items-center">
+                    <a
+                      class=" avatar rounded-circle mr-3"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/vue.jpg"
+                      />
+                    </a>
+
+                    <div class=" media-body">
+                      <span class=" name mb-0 text-sm">
+                        Vue Paper UI Kit PRO
+                      </span>
+                    </div>
+                  </div>
+                </th>
+
+                <td class=" budget">$2200 USD</td>
+
+                <td>
+                  <span class=" badge badge-dot mr-4">
+                    <i class=" bg-success"> </i>
+
+                    <span class=" status"> completed </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class=" avatar-group">
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Ryan Tompson"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-1.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Romina Hadid"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-2.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Alexander Smith"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-3.jpg"
+                      />
+                    </a>
+
+                    <a
+                      class=" avatar avatar-sm rounded-circle"
+                      tooltip="Jessica Doe"
+                      placement="top"
+                      href="javascript:void(0)"
+                    >
+                      <img
+                        alt="Image placeholder"
+                        src="assets/img/theme/team-4.jpg"
+                      />
+                    </a>
+                  </div>
+                </td>
+
+                <td>
+                  <div class=" d-flex align-items-center">
+                    <span class=" completion mr-2"> 100% </span>
+
+                    <div>
+                      <div class=" progress">
+                        <progressbar type="success" [value]="100">
+                        </progressbar>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td class=" text-right">
+                  <div class="dropdown no-caret" dropdown [dropup]="'true'">
+                    <a
+                      aria-controls="dropdown-basic"
+                      class=" btn btn-sm btn-icon-only text-light dropdown-toggle"
+                      dropdownToggle
+                      href="javascript:void(0)"
+                      role="button"
+                    >
+                      <i class=" fas fa-ellipsis-v"> </i>
+                    </a>
+
+                    <div
+                      class="dropdown-menu dropdown-menu-right dropdown-menu-arrow"
+                      *dropdownMenu
+                    >
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Another action
+                      </a>
+
+                      <a href="javascript:void(0)" class="dropdown-item">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

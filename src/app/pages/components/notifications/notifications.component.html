@@ -1,0 +1,439 @@
+<div class=" header bg-danger pb-6">
+  <div class=" container-fluid">
+    <div class=" header-body">
+      <div class=" row align-items-center py-4">
+        <div class=" col-lg-6 col-7">
+          <h6 class=" h2 text-white d-inline-block mb-0">Notifications</h6>
+
+          <nav
+            aria-label="breadcrumb"
+            class=" d-none d-md-inline-block ml-md-4"
+          >
+            <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> <i class=" fas fa-home"> </i> </a>
+              </li>
+
+              <li class=" breadcrumb-item">
+                <a href="javascript:void(0)"> Components </a>
+              </li>
+
+              <li aria-current="page" class=" breadcrumb-item active">
+                Notifications
+              </li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class=" col-lg-6 col-5 text-right">
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)"> New </a>
+
+          <a class=" btn btn-sm btn-neutral" href="javascript:void(0)">
+            Filters
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" container-fluid mt--6">
+  <div class=" row justify-content-center">
+    <div class=" col-lg-8 card-wrapper">
+      <div class=" card">
+        <div class=" card-header"><h3 class=" mb-0">Alerts</h3></div>
+
+        <div class=" card-body">
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'default'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Default! </strong> This is a default alert—check it out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'primary'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Primary! </strong> This is a primary alert—check it out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'secondary'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Secondary! </strong> This is a secondary alert—check it
+              out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'info'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Info! </strong> This is a info alert—check it out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'success'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Success! </strong> This is a success alert—check it out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+
+            [type]="'danger'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Danger! </strong> This is a danger alert—check it out!
+            </span>
+          </alert>
+
+          <alert
+            class="alert-dismissible"
+            [dismissible]="dismissible"
+            [type]="'warning'"
+          >
+            <span class=" alert-icon"> <i class=" ni ni-like-2"> </i> </span>
+
+            <span class=" alert-text">
+              <strong> Warning! </strong> This is a warning alert—check it out!
+            </span>
+          </alert>
+        </div>
+      </div>
+
+      <div class=" card">
+        <div class=" card-header"><h3 class=" mb-0">Modals</h3></div>
+
+        <div class=" card-body">
+          <div class=" row">
+            <div class=" col-md-4">
+              <button
+                class=" btn btn-block btn-primary mb-3"
+                data-target="#modal-default"
+                data-toggle="modal"
+                type="button"
+                (click)="openDefaultModal(modalDefault)"
+              >
+                Default
+              </button>
+              <ng-template #modalDefault>
+                <div class=" modal-header">
+                  <h6 class=" modal-title" id="modal-title-default">
+                    Type your modal title
+                  </h6>
+
+                  <button
+                    aria-label="Close"
+                    class=" close"
+                    data-dismiss="modal"
+                    type="button"
+                    (click)="defaultModal.hide()"
+                  >
+                    <span aria-hidden="true"> × </span>
+                  </button>
+                </div>
+
+                <div class=" modal-body">
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+
+                <div class=" modal-footer">
+                  <button class=" btn btn-primary" type="button">
+                    Save changes
+                  </button>
+
+                  <button
+                    class=" btn btn-link ml-auto"
+                    data-dismiss="modal"
+                    type="button"
+                    (click)="defaultModal.hide()"
+                  >
+                    Close
+                  </button>
+                </div>
+              </ng-template>
+            </div>
+
+            <div class=" col-md-4">
+              <button
+                class=" btn btn-block btn-warning mb-3"
+                data-target="#modal-notification"
+                data-toggle="modal"
+                type="button"
+                (click)="openNotificationModal(modalNotification)"
+              >
+                Notification
+              </button>
+              <ng-template #modalNotification>
+                <div class=" modal-header">
+                  <h6 class=" modal-title" id="modal-title-notification">
+                    Your attention is required
+                  </h6>
+
+                  <button
+                    aria-label="Close"
+                    class=" close"
+                    data-dismiss="modal"
+                    type="button"
+                    (click)="notificationModal.hide()"
+                  >
+                    <span aria-hidden="true"> × </span>
+                  </button>
+                </div>
+
+                <div class=" modal-body">
+                  <div class=" py-3 text-center">
+                    <i class=" ni ni-bell-55 ni-3x"> </i>
+
+                    <h4 class=" heading mt-4">You should read this!</h4>
+
+                    <p>
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia.
+                    </p>
+                  </div>
+                </div>
+
+                <div class=" modal-footer">
+                  <button class=" btn btn-white" type="button">
+                    Ok, Got it
+                  </button>
+
+                  <button
+                    class=" btn btn-link text-white ml-auto"
+                    data-dismiss="modal"
+                    type="button"
+                    (click)="notificationModal.hide()"
+                  >
+                    Close
+                  </button>
+                </div>
+              </ng-template>
+            </div>
+
+            <div class=" col-md-4">
+              <button
+                class=" btn btn-block btn-default"
+                data-target="#modal-form"
+                data-toggle="modal"
+                type="button"
+                (click)="openFormModal(modalForm)"
+              >
+                Form
+              </button>
+              <ng-template #modalForm>
+                <div class=" modal-body p-0">
+                  <div class=" card bg-secondary border-0 mb-0">
+                    <div class=" card-header bg-transparent pb-5">
+                      <div class=" text-muted text-center mt-2 mb-3">
+                        <small> Sign in with </small>
+                      </div>
+
+                      <div class=" btn-wrapper text-center">
+                        <a
+                          class=" btn btn-neutral btn-icon"
+                          href="javascript:void(0)"
+                        >
+                          <span class=" btn-inner--icon">
+                            <img src="assets/img/icons/common/github.svg" />
+                          </span>
+
+                          <span class=" btn-inner--text"> Github </span>
+                        </a>
+
+                        <a
+                          class=" btn btn-neutral btn-icon"
+                          href="javascript:void(0)"
+                        >
+                          <span class=" btn-inner--icon">
+                            <img src="assets/img/icons/common/google.svg" />
+                          </span>
+
+                          <span class=" btn-inner--text"> Google </span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class=" card-body px-lg-5 py-lg-5">
+                      <div class=" text-center text-muted mb-4">
+                        <small> Or sign in with credentials </small>
+                      </div>
+
+                      <form role="form">
+                        <div
+                          class="form-group mb-3"
+                          [ngClass]="{ focused: focus === true }"
+                        >
+                          <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"
+                                ><i class="ni ni-email-83"></i
+                              ></span>
+                            </div>
+                            <input
+                              class="form-control"
+                              placeholder="Email"
+                              type="email"
+                              (focus)="focus = true"
+                              (blur)="focus = false"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="form-group"
+                          [ngClass]="{ focused: focus1 === true }"
+                        >
+                          <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"
+                                ><i class="ni ni-lock-circle-open"></i
+                              ></span>
+                            </div>
+                            <input
+                              class="form-control"
+                              placeholder="Password"
+                              type="password"
+                              (focus)="focus1 = true"
+                              (blur)="focus1 = false"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="custom-control custom-control-alternative custom-checkbox"
+                        >
+                          <input
+                            class="custom-control-input"
+                            id=" customCheckLogin"
+                            type="checkbox"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for=" customCheckLogin"
+                          >
+                            <span>Remember me</span>
+                          </label>
+                        </div>
+                        <div class="text-center">
+                          <button type="button" class="btn btn-primary my-4">
+                            Sign in
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" card">
+        <div class=" card-header"><h3 class=" mb-0">Notifications</h3></div>
+
+        <div class=" card-body">
+          <button
+            class=" btn btn-default"
+            (click)="showNotification('default')"
+          >
+            Default
+          </button>
+
+          <button class=" btn btn-info" (click)="showNotification('info')">
+            Info
+          </button>
+
+          <button
+            class=" btn btn-success"
+            (click)="showNotification('success')"
+          >
+            Success
+          </button>
+
+          <button
+            class=" btn btn-warning"
+            (click)="showNotification('warning')"
+          >
+            Warning
+          </button>
+
+          <button class=" btn btn-danger" (click)="showNotification('danger')">
+            Danger
+          </button>
+        </div>
+      </div>
+
+      <div class=" card">
+        <div class=" card-header"><h3 class=" mb-0">Sweet alerts</h3></div>
+
+        <div class=" card-body">
+          <button class=" btn btn-primary" (click)="basicSwal()">
+            Basic alert
+          </button>
+
+          <button class=" btn btn-info" (click)="infoSwal()">Info alert</button>
+
+          <button class=" btn btn-success" (click)="successSwal()">
+            Success alert
+          </button>
+
+          <button class=" btn btn-warning" (click)="warningSwal()">
+            Warning alert
+          </button>
+
+          <button class=" btn btn-default" (click)="questionSwal()">
+            Question
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
